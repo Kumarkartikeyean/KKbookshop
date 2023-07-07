@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.KKBookshop.com</title>
+    <style type="text/css">
+        html {
+    margin: 0 ;
+    padding: 0 ;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin:0 ;
+    padding: 0 ;
+    background-color: #d0fcbc;
+}
+.navbar {
+    background-color: #8b2a8b;
+    width: 100%;
+    height: 120px;
+    position:fixed;
+    margin:0;
+    top: 0;
+    z-index: 1;
+}
+.header {
+    font-size:35px;
+    color: rgb(216, 239, 6);
+    background-color: #8b2a8b;
+    float:left;
+    position: relative;
+    margin: 10px;
+    /* position:relative; */
+    /* position:top -20px; */
+
+}
+ul {
+    list-style-type: none;
+    margin: 100;
+    padding: 70;
+    overflow: hidden;
+    background-color: #8b2a8b;
+}
+li {
+    float: left;
+    font-weight: bold;
+}
+li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    /* padding-right: 70%; */
+}
+li a:hover {
+    background-color: rgb(0, 0, 0);
+    border-bottom: 4px ridge #e7f700;
+}
+#logo {
+    padding: 10px;
+    float: left;
+    height: 50px;
+}
+.secborder {
+    margin: 2px;
+    border : 2px solid  #cd17d6;
+}
+.signup {
+    /* background-color: aliceblue; */
+    font-weight: bold;
+    font-size: 20px;
+    float: right;
+    padding-right: 20px;
+
+    height: 40px;
+    text-align: center;
+}
+p a {
+    text-decoration: none;
+    color: aliceblue;
+}
+p a:hover {
+    background-color: #090909;
+    border-bottom: 4px ridge #e7f700;
+}
+.login {
+    /* background-color: rgb(44, 132, 208); */
+    font-weight: bold;
+    font-size: 20px;
+    float: right;
+    padding-right: 20px;
+
+    height: 40px;
+    text-align: center;
+}
+.search {
+    float: right;
+    padding-top: 20px;
+    height: 30px;
+    margin-bottom: 20px;
+    padding-right: 10px;
+}
+.search1 {
+    float: right;
+    padding-top: 20px;
+    height: 30px;
+    margin-top: 7px;
+    padding-right: 10px;
+}
+.break {
+    clear: both;
+}
+.maintitle1 {
+    margin-top: 220px;
+    background-color: #140000;
+    color: #fffdfd;
+    text-align: center;
+    width: 1000px;
+    height: 70px;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    margin-bottom: 0;
+}
+.flex-intro {
+    display: flex;
+    background-color: #ff0101;
+    margin-top: 10px;
+    height: 500px;
+    flex-direction: row;
+}
+img {
+        border-radius: 10%;
+        /* border: 4px ridge #f0eff4; */
+}
+#leftintro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000 ;
+    width:700px;
+    height: 480px;
+    /* margin: 20px; */
+    color: rgb(7, 8, 9);
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 40px;
+    font-family:"Times New Roman", Times, serif ;
+    
+}
+.grad1 {
+    background-image: linear-gradient(to right, rgb(25, 0, 255) ,rgb(13, 255, 0) );
+}
+.grad {
+    background-image: linear-gradient(to right, red ,yellow );
+}
+#rightintro {
+    width:700px;
+    height: 480px;
+    margin-top: 10px;
+    margin-right: 20px;
+    /* margin: 20px; */
+    color: rgb(6, 9, 11); 
+}
+
+#title {
+    /* background-color: #fff; */
+    font-size: 120px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    padding-bottom: 0;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 50px;
+  color: #000000;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+#subtitle {
+    /* background-color: #fff; */
+    font-size: 25px;
+    padding: 30px;
+    padding-top: 0;
+    text-align: center;
+    padding-bottom: 0;
+}
+
+.button {
+    color: aliceblue;
+    background-color: #130263;
+    font-size: 20px;
+    padding-top: 0;
+    text-align: center;
+    width:200px;
+    border-radius: 10px;
+}
+
+.best-sell-book1{
+    display: flex;
+    background-color: #ff0000;
+    width:100%;
+    margin-top: 40px;
+    height: 500px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.inverted-6 {
+  background:
+    conic-gradient(            #ba0000 0 90deg, #fff0 0) bottom left,
+    conic-gradient(            #590000 0 90deg, #fff0 0) bottom left,
+    conic-gradient(from  90deg,#f0dc02 0 90deg, #fff0 0) top left,
+    conic-gradient(from  90deg,#6010f6 0 90deg, #fff0 0) top left,
+    conic-gradient(from 180deg,#b003db 0 90deg, #fff0 0) top right,
+    conic-gradient(from 180deg,#75ee0b 0 90deg, #fff0 0) top right,
+    conic-gradient(from -90deg,#0787b1 0 90deg, #fff0 0) bottom right,
+    conic-gradient(from -90deg,#f06d0a 0 90deg, #fff0 0) bottom right,
+    #000;
+  -webkit-background-clip:text,padding-box;
+          background-clip:text,padding-box;
+  background-size: 202% 202%;
+  transition: 0.5s;
+}
+.inverted-6:hover {  
+  background-position: center;
+ }
+div a {
+    text-decoration: none;
+    color: #fffdfd;
+}
+.title-bsb {
+    background-color: #140000;
+    color: #fffdfd;
+    text-align: center;
+    width: 1000px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+.cardfiction {
+    width: 210px;
+    height: 310px;
+    margin: 50px;
+    padding-top: 20px;
+    text-align: center;
+    transition: all .8s;
+    position:relative;
+    transition: all 1.5s;
+    transform-style: preserve-3d;
+    z-index: 0;
+}
+.cardfiction:hover {
+    transform: rotateY(180deg);
+}
+.front1 {
+    width: 210px;
+    height: 310px;
+        background-image: url(https://images-na.ssl-images-amazon.com/images/I/912-IVfwS-L.jpg);
+        background-size:209px;
+        position: absolute;
+        backface-visibility: hidden;
+}
+.back1 {
+    background-color: #fffdfd;
+    width: 210px;
+    height: 300px;
+    padding: 5px;
+    transform: rotateY(180deg);
+    position: absolute;
+    backface-visibility: hidden;
+}
+#fic {
+    background-color: #110303;
+    display: inline-block;
+    border-radius: 20%;
+}   
+.cardhorror {
+    width: 210px;
+    height: 310px;
+    margin: 50px;
+    padding-top: 20px;
+    text-align: center;
+    transition: all .8s;
+    position:relative;
+    transition: all 1.5s;
+    transform-style: preserve-3d;
+}
+.cardhorror:hover {
+    transform: rotateY(180deg);
+}
+.front2 {
+    width: 210px;
+    height: 310px;
+        background-image: url(https://hachette.imgix.net/books/9780751555073.jpg?auto=compress,format);
+        background-size:209px;
+        position: absolute;
+        backface-visibility: hidden;
+}
+.back2 {
+    background-color: #fffdfd;
+    width: 210px;
+    height: 300px;
+    padding: 5px;
+    transform: rotateY(180deg);
+    position: absolute;
+    backface-visibility: hidden;
+}
+.cardthrill {
+    width: 210px;
+    height: 310px;
+    margin: 50px;
+    padding-top: 20px;
+    text-align: center;
+    transition: all .8s;
+    position:relative;
+    transition: all 1.5s;
+    transform-style: preserve-3d;
+}
+.cardthrill:hover {
+    transform: rotateY(180deg);
+}
+.front3 {
+    width: 210px;
+    height: 310px;
+        background-image: url(https://cdn-images-1.medium.com/max/2600/1*aiFOBTR4rIfNDPGsU9zsvQ.png);
+        background-size:210px;
+        position: absolute;
+        backface-visibility: hidden;
+}
+.back3 {
+    background-color: #fffdfd;
+    width: 210px;
+    height: 300px;
+    padding: 5px;
+    transform: rotateY(180deg);
+    position: absolute;
+    backface-visibility: hidden;
+}
+.cardcomic {
+    width: 210px;
+    height: 310px;
+    margin: 50px;
+    padding-top: 20px;
+    text-align: center;
+    transition: all .8s;
+    position:relative;
+    transition: all 1.5s;
+    transform-style: preserve-3d;
+}
+.cardcomic:hover {
+    transform: rotateY(180deg);
+}
+.front4 {
+    width: 210px;
+    height: 310px;
+        background-image: url(https://freshcomics.s3.amazonaws.com/issue_covers/JUL148062.jpg);
+        background-size:210px;
+        position: absolute;
+        backface-visibility: hidden;
+}
+.back4 {
+    background-color: #fffdfd;
+    width: 210px;
+    height: 300px;
+    padding: 5px;
+    transform: rotateY(180deg);
+    position: absolute;
+    backface-visibility: hidden;
+}
+.recommended {
+    background-color: #140000;
+    color: #fffdfd;
+    text-align: center;
+    width: 1000px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.subtitlerec {
+    margin-top: 50px;
+    background-color: #140000;
+    color: #fffdfd;
+    text-align: center;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.searchbar input {
+    background-color: #ffffff;
+    background-image: linear-gradient(to right, green, yellow);
+    color: #000000;
+    text-align: left;
+    width: 50%;
+    height: 25px;
+    margin-bottom: 0%;
+    border:2px solid #000000;
+    padding-left: 30px;
+    background-image: url(https://openclipart.org/image/2400px/svg_to_png/213239/Search-icon.png);
+    background-size:20px;
+    background-repeat: no-repeat;
+    background-position: 5px;
+    
+}
+.searchbar input:hover {
+    background-color: #eaff00;
+}
+.recommendation1 {
+    display: flex;
+    background-color: #ff0000;
+    width:100%;
+    margin-top: 0;
+    height: 500px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.inverted-4 {
+  background:
+    conic-gradient(from -45deg at 50% calc(5*100%/6),#ff0000 90deg, #ff0000  0) calc(0*100%/3) var(--_d, 100%),
+    conic-gradient(from -45deg at 50% calc(5*100%/6),#5eff00 90deg, #ff0000 0) calc(0*100%/3) var(--_d, 100%),
+    conic-gradient(from -45deg at 50% calc(4*100%/6),#ff0000 90deg, #ff0000 0) calc(1*100%/3) var(--_d, 100%),
+    conic-gradient(from -45deg at 50% calc(4*100%/6),#8c1a3c 90deg, #ff0000 0) calc(1*100%/3) var(--_d, 100%),
+    conic-gradient(from -45deg at 50% calc(3*100%/6),#ff0000 90deg, #ff0000 0) calc(2*100%/3) var(--_d, 100%),
+    conic-gradient(from -45deg at 50% calc(3*100%/6),#411df7 90deg, #ff0000 0) calc(2*100%/3) var(--_d, 100%),
+    conic-gradient(from -45deg at 50% calc(2*100%/6),#ff0000 90deg, #ff0000 0) calc(3*100%/3) var(--_d, 100%),
+    conic-gradient(from -45deg at 50% calc(2*100%/6),#ff08d6 90deg, #ff0000 0) calc(3*100%/3) var(--_d, 100%);
+  -webkit-background-clip: text, padding-box;
+          background-clip: text, padding-box;
+  background-size: calc(100%/4) 600%;
+  background-repeat: no-repeat;
+  transition: 1s linear;
+}
+.inverted-4:hover {
+  --_d: 0%;
+}
+
+.cardfiction2 {
+    width: 210px;
+    height: 310px;
+    margin: 25px;
+    padding-top: 20px;
+    text-align: center;
+    transition: all .8s;
+    position:relative;
+    transition: all 1.5s;
+    transform-style: preserve-3d;
+    z-index: 0;
+}
+.cardfiction2:hover {
+    transform: rotateY(180deg);
+}
+.front12 {
+    width: 210px;
+    height: 310px;
+        background-image: url(https://images-na.ssl-images-amazon.com/images/I/912-IVfwS-L.jpg);
+        background-size:209px;
+        position: absolute;
+        backface-visibility: hidden;
+}
+.back12 {
+    background-color: #fffdfd;
+    width: 210px;
+    height: 300px;
+    padding: 5px;
+    transform: rotateY(180deg);
+    position: absolute;
+    backface-visibility: hidden;
+}
+#fic {
+    background-color: #110303;
+    display: inline-block;
+    border-radius: 20%;
+}   
+.cardhorror2 {
+    width: 210px;
+    height: 310px;
+    margin: 25px;
+    padding-top: 20px;
+    text-align: center;
+    transition: all .8s;
+    position:relative;
+    transition: all 1.5s;
+    transform-style: preserve-3d;
+}
+.cardhorror2:hover {
+    transform: rotateY(180deg);
+}
+.front22 {
+    width: 210px;
+    height: 310px;
+        background-image: url(https://hachette.imgix.net/books/9780751555073.jpg?auto=compress,format);
+        background-size:209px;
+        position: absolute;
+        backface-visibility: hidden;
+}
+.back22 {
+    background-color: #fffdfd;
+    width: 210px;
+    height: 300px;
+    padding: 5px;
+    transform: rotateY(180deg);
+    position: absolute;
+    backface-visibility: hidden;
+}
+.cardthrill2 {
+    width: 210px;
+    height: 310px;
+    margin: 25px;
+    padding-top: 20px;
+    text-align: center;
+    transition: all .8s;
+    position:relative;
+    transition: all 1.5s;
+    transform-style: preserve-3d;
+}
+.cardthrill2:hover {
+    transform: rotateY(180deg);
+}
+.front32 {
+    width: 210px;
+    height: 310px;
+        background-image: url(https://cdn-images-1.medium.com/max/2600/1*aiFOBTR4rIfNDPGsU9zsvQ.png);
+        background-size:210px;
+        position: absolute;
+        backface-visibility: hidden;
+}
+.back32 {
+    background-color: #fffdfd;
+    width: 210px;
+    height: 300px;
+    padding: 5px;
+    transform: rotateY(180deg);
+    position: absolute;
+    backface-visibility: hidden;
+}
+.cardcomic2 {
+    width: 210px;
+    height: 310px;
+    margin: 25px;
+    padding-top: 20px;
+    text-align: center;
+    transition: all .8s;
+    position:relative;
+    transition: all 1.5s;
+    transform-style: preserve-3d;
+}
+.cardcomic2:hover {
+    transform: rotateY(180deg);
+}
+.front42 {
+    width: 210px;
+    height: 310px;
+        background-image: url(https://freshcomics.s3.amazonaws.com/issue_covers/JUL148062.jpg);
+        background-size:210px;
+        position: absolute;
+        backface-visibility: hidden;
+}
+.back42 {
+    background-color: #fffdfd;
+    width: 210px;
+    height: 300px;
+    padding: 5px;
+    transform: rotateY(180deg);
+    position: absolute;
+    backface-visibility: hidden;
+}
+.cardnovel2 {
+    width: 210px;
+    height: 310px;
+    margin: 25px;
+    padding-top: 20px;
+    text-align: center;
+    transition: all .8s;
+    position:relative;
+    transition: all 1.5s;
+    transform-style: preserve-3d;
+    z-index: 0;
+}
+.cardnovel2:hover {
+    transform: rotateY(180deg);
+}
+.front52 {
+    width: 210px;
+    height: 310px;
+        background-image: url(https://lh6.googleusercontent.com/Lkr_Yw4DUiXoIIyU-UskmTpFGXE1ceV1FngZ7kxW_gm31oMdXiUAnMO9KTmKxWMeUBMl_vl1nSnFczxORWYLOazb-2U07c_xQA8ngtwEET4UGWtV-vSs8ETea3pzH7goGEjQK-cL);
+        background-size:209px;
+        position: absolute;
+        backface-visibility: hidden;
+}
+.back52 {
+    background-color: #fffdfd;
+    width: 210px;
+    height: 300px;
+    padding: 5px;
+    transform: rotateY(180deg);
+    position: absolute;
+    backface-visibility: hidden;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+h2 {
+  font-size: 50px;
+  font-weight: bolder;
+  color: #c5a9a9;
+  letter-spacing: 5px;
+  cursor: pointer;
+  display: inline-block;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+h2:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #6d55c6 0%,
+    #98c332 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 80px;
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.subtitlebsb {
+    background-color:transparent;
+    color: #140000;
+    text-align: center;
+    font-size: 20px;
+    width: 1000px;
+    height: 30px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.pop-outin {
+  animation: 2s anim-popoutin ease infinite;
+}
+
+@keyframes anim-popoutin {
+  0% {
+    color: black;
+    transform: scale(0);
+    opacity: 0;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  25% {
+    color: red;
+    transform: scale(2);
+    opacity: 1;
+    text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    color: black;
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    /* animate nothing to add pause at the end of animation */
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+.fromtop {
+  animation: 2s anim-fromtop linear infinite;
+}
+@keyframes anim-fromtop {
+  0% { opacity: 0; transform: translateY(-100%);}
+  25% { opacity: 1; transform: translateY(0%);}
+  50% {
+  }
+  100% {
+  }
+}
+.titlerev {
+    margin-top: 50px;
+    background-color: #140000;
+    color: #fffdfd;
+    text-align: center;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1000px;
+    margin-bottom: 30px;
+}
+.reviewflex {
+    display: flex;
+    background-color: #160642;
+    width:100%;
+    margin-top: 0;
+    margin-bottom: 50px;
+    height: 500px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.subtitlerev {
+    margin-top: 10px;
+    background-color: transparent;
+    color: #140000;
+    text-align: center;
+    width: 500px;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.peoplecard1 {
+    background-color: #ffff00;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+    margin: 30px;
+}
+.peoplecard2 {
+    background-color: #ffff00;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+    margin: 30px;
+}
+.peoplecard3 {
+    background-color: #ffff00;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+    margin: 30px;
+}
+.glowing-border {
+border: 5px solid #c12424;
+border-radius: 7px;
+}
+
+.glowing-border:focus {
+outline: none;
+border-color: #ac2f2f;
+box-shadow: 0 0 10px #e4513b;
+}
+#form-review {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      margin-bottom: 50px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      border:5px solid #000000;
+    }
+
+    input[type=text], input[type=email], textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+    }
+
+    input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    /* Style for the border */
+    .border {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border: 2px solid transparent;
+      border-radius: 5px;
+      animation: borderAnimation 2s infinite;
+    }
+
+    /* Animation keyframes */
+    @keyframes borderAnimation {
+      0% {
+        border-color: #f06d0a;
+      }
+      25% {
+        border-color: #FF0000;
+      }
+      50% {
+        border-color: #5100ff;
+      }
+      75% {
+        border-color: #010c03;
+      }
+      100% {
+        border-color: #f06d0a;
+      }
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Style for social media icons */
+    .social-icons {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .social-icons li {
+      margin: 0 10px;
+    }
+
+    .social-icons a {
+      color: #fff;
+      font-size: 24px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #FFC107;
+    }
+
+    /* Style for demo links */
+    .demo-links {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .demo-links li {
+      margin: 0 10px;
+    }
+
+    .demo-links a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .demo-links a:hover {
+      color: #FFC107;
+    }
+
+    /* Style for back-to-top link */
+    #back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #8080d9;
+      color: #050202;
+      font-weight: bold ;
+      padding: 10px 15px;
+      border: 3px ridge #000000;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: opacity 0.3s;
+    }
+
+    #back-to-top:hover {
+      opacity: 0.8;
+    }
+    .animation-title {
+    background-color: #fff;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 70px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    margin-top: 200px;
+    }
+
+    @keyframes animate {
+    0% {
+        background-position: -500%;
+    }
+    100% {
+        background-position: 500%;
+    }
+    }
+</style>
+</head>
+<body>
+    <div class="navbar">
+        <div id="logo">
+            <img src="https://www.pngarts.com/files/3/Open-Book-PNG-High-Quality-Image.png" width=80 alt="https://th.bing.com/th/id/OIP.U-1vllCqcpJOHow4AKI1pwHaH5?w=164&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+        </div>
+        <div class="header"><strong>KKBookshop</strong></div>
+        <div class="signup">
+            <p><a href="#Sign Up">Sign Up</a></p>
+        </div>
+        <div class="login">
+            <p><a href="#Login">Login</a></p>
+        </div>
+        
+        <br> <br> <br>
+        <div>
+            <ul>
+                <li class="secborder"><a href="#maintitle">Intro</a></li>
+                <li class="secborder"><a href="#best-sell-book">Best Selling Books</a></li>
+                <li class="secborder"><a href="#recommendation">Our Recommendations</a></li>
+                <li class="secborder"><a href="#review">Reviews</a></li>
+                <form action="">
+                    <li class="search1"><input type="submit" value="Search"></li>
+                    <li class="search" ><input type="text" placeholder="Search for book..."></li>
+                </form>
+        </ul>
+        </div>
+    </div>
+    <div class="break"></div>
+    <div id="maintitle" class="maintitle1 animation-title">
+        Welcome Book Lovers !
+    </div>
+    <div id="intro" class="flex-intro grad1">
+        <div  id="leftintro" class="grad">
+            <div id="title">
+                <div class="waviy">
+                    <span style="--i:1">KKBOOKSHOP</span>
+                    
+                   </div>
+            </div>
+            <div id="subtitle">
+                <p>Your only stop solution !! &hearts;</p>
+            </div>
+            <div class="button">
+                <a href="#best-sell-book"><strong>Best Selling Books</strong></a>
+            </div>
+        </div>
+        <div id="rightintro">
+            <img src="https://traveler.marriott.com/wp-content/uploads/2015/04/Maple_Street_Bookstore-_Marriot_6622.jpg" width= 700 height=480  alt="">
+        </div>
+    </div>
+    <div id="best-sell-book" class="title-bsb">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h3 class="animate-charcter"> BEST SELLING BOOKS</h3>
+              </div>
+            </div>
+          </div>
+        <!-- here add subtitle for <best-sell-book></best-sell-book> -->
+    </div>
+    <div class="subtitlebsb">
+        <div class='line'>
+            <h3 class='pop-outin'>Checkout Some Trending Books of All Time !!</h3>
+        </div>
+    </div>
+
+    <div class="best-sell-book1 inverted-6">
+        <div class="cardfiction">
+            <div class="front1">
+             </div>
+             <div class="back1">
+                <h3>The Time Machine</h3>
+                <p>(Fiction)</p>
+                <p style="font-size: 200%; font-weight: bold;margin-bottom: 10px;">MRP <strike>Rs 150 </strike>Rs 135</p>
+                <p style="font-size: 190%;color: #ff0000; font-weight: bold;margin-top: 10px;margin-bottom: 10px;">10% OFF</p>
+                <div id="fic"><a href="#" target="">Add+</a></div>
+                <!-- <div id="fic1">Added</div> -->
+             </div>
+        </div>
+        <div class="cardhorror">
+            <div class="front2">
+             </div>
+             <div class="back2">
+                <h3>The Time Machine</h3>
+                <p>(Horror)</p>
+                <p style="font-size: 200%; font-weight: bold;margin-bottom: 10px;">MRP <strike>Rs 180 </strike>Rs 162</p>
+                <p style="font-size: 190%;color: #ff0000; font-weight: bold;margin-top: 10px;margin-bottom: 10px;">10% OFF</p>
+                <div id="fic"><a href="#" target="">Add+</a></div>
+                <!-- <div id="fic1">Added</div> -->
+             </div>
+        </div>
+        <div class="cardthrill">
+            <div class="front3">
+             </div>
+             <div class="back3">
+                <h3>Girl in Room 105</h3>
+                <p>(Thrill and Suspense)</p>
+                <p style="font-size: 200%; font-weight: bold;margin-bottom: 10px;">MRP <strike>Rs 350 </strike>Rs 315</p>
+                <p style="font-size: 190%;color: #ff0000; font-weight: bold;margin-top: 10px;margin-bottom: 10px;">10% OFF</p>
+                <div id="fic"><a href="#" target="">Add+</a></div>
+                <!-- <div id="fic1">Added</div> -->
+             </div>
+        </div>
+        <div class="cardcomic">
+            <div class="front4">
+             </div>
+             <div class="back4">
+                <h3>Marvel-Verse Spiderman</h3>
+                <p>(Comic)</p>
+                <p style="font-size: 200%; font-weight: bold;margin-bottom: 10px;">MRP <strike>Rs 500 </strike>Rs 450</p>
+                <p style="font-size: 190%;color: #ff0000; font-weight: bold;margin-top: 10px;margin-bottom: 10px;">10% OFF</p>
+                <div id="fic"><a href="#" target="">Add+</a></div>
+                <!-- <div id="fic1">Added</div> -->
+             </div>
+        </div>
+    </div>
+    <div id="recommendation" class="recommended">
+        <h2>Our Recommendations</h2>
+    </div>
+    <div class="subtitlebsb">
+        <div class='line'>
+            <h3 class='pop-outin'>Here is Our Hand Picked Books which You Must Read !!</h3>
+        </div>
+    </div>
+    <div class="searchbar">
+        <input type="text" placeholder="Search books ..." >
+    </div>
+    <div class="recommendation1 inverted-4">
+        <div class="cardfiction2">
+            <div class="front12">
+             </div>
+             <div class="back12">
+                <h3>The Time Machine</h3>
+                <p>(Fiction)</p>
+                <p style="font-size: 200%; font-weight: bold;margin-bottom: 10px;">MRP <strike>Rs 150 </strike>Rs 135</p>
+                <p style="font-size: 190%;color: #ff0000; font-weight: bold;margin-top: 10px;margin-bottom: 10px;">10% OFF</p>
+                <div id="fic"><a href="#" target="">Add+</a></div>
+                <!-- <div id="fic1">Added</div> -->
+             </div>
+        </div>
+        <div class="cardhorror2">
+            <div class="front22">
+             </div>
+             <div class="back22">
+                <h3>The Time Machine</h3>
+                <p>(Horror)</p>
+                <p style="font-size: 200%; font-weight: bold;margin-bottom: 10px;">MRP <strike>Rs 180 </strike>Rs 162</p>
+                <p style="font-size: 190%;color: #ff0000; font-weight: bold;margin-top: 10px;margin-bottom: 10px;">10% OFF</p>
+                <div id="fic"><a href="#" target="">Add+</a></div>
+                <!-- <div id="fic1">Added</div> -->
+             </div>
+        </div>
+        <div class="cardthrill2">
+            <div class="front32">
+             </div>
+             <div class="back32">
+                <h3>Girl in Room 105</h3>
+                <p>(Thrill and Suspense)</p>
+                <p style="font-size: 200%; font-weight: bold;margin-bottom: 10px;">MRP <strike>Rs 350 </strike>Rs 315</p>
+                <p style="font-size: 190%;color: #ff0000; font-weight: bold;margin-top: 10px;margin-bottom: 10px;">10% OFF</p>
+                <div id="fic"><a href="#" target="">Add+</a></div>
+                <!-- <div id="fic1">Added</div> -->
+             </div>
+        </div>
+        <div class="cardcomic2">
+            <div class="front42">
+             </div>
+             <div class="back42">
+                <h3>Marvel-Verse Spiderman</h3>
+                <p>(Comic)</p>
+                <p style="font-size: 200%; font-weight: bold;margin-bottom: 10px;">MRP <strike>Rs 500 </strike>Rs 450</p>
+                <p style="font-size: 190%;color: #ff0000; font-weight: bold;margin-top: 10px;margin-bottom: 10px;">10% OFF</p>
+                <div id="fic"><a href="#" target="">Add+</a></div>
+                <!-- <div id="fic1">Added</div> -->
+             </div>
+        </div>
+        <div class="cardnovel2">
+            <div class="front52">
+             </div>
+             <div class="back52">
+                <h3>Psychology of Money</h3>
+                <p>(Novel)</p>
+                <p style="font-size: 200%; font-weight: bold;margin-bottom: 10px;">MRP <strike>Rs 280 </strike>Rs 252</p>
+                <p style="font-size: 190%;color: #ff0000; font-weight: bold;margin-top: 10px;margin-bottom: 10px;">10% OFF</p>
+                <div id="fic"><a href="#" target="">Add+</a></div>
+                <!-- <div id="fic1">Added</div> -->
+             </div>
+        </div>
+    </div>
+    <div id="review" class="titlerev">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h3 class="animate-charcter"> Reviews</h3>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="subtitlerev">
+        <h3>What People say about us ...</h3>
+    </div>
+    <div class="reviewflex">
+        <div class="peoplecard1 glowing-border">
+            <img src="https://th.bing.com/th/id/R.a0486b3d7ae32700a947d1c0123ab524?rik=HyBNCkQiAdxsLg&riu=http%3a%2f%2f2.bp.blogspot.com%2f_kYoznsyTha0%2fS9lwdEoOP4I%2fAAAAAAAAARM%2fLH9jPnwRvF8%2fs1600%2fPassport%2bsuri.jpg&ehk=U1Pa9bBBRaBDQqseeUCTggcODt88Ehaejc6VpdMKPD4%3d&risl=&pid=ImgRaw&r=0" width="100" style="border:2px solid #000000;">
+            <p><strong>Mr Rahul Singh</strong></p>
+            <p>"A book lover's paradise, with an extensive collection and cozy ambiance that will keep you coming back."</p>
+        </div>
+        <div class="peoplecard2 glowing-border">
+            <img src="https://i.pinimg.com/originals/07/15/6b/07156b4680962b650af1c6927c7019d5.jpg"  width="100" style="border:2px solid #000000;" alt="">
+            <p><strong>Mr Tanmay Kumar</strong></p>
+            <p>"Immerse yourself in the magic of literature at this delightful bookshop. A haven for bookworms!"</p>
+        </div>
+        <div class="peoplecard3 glowing-border">
+            <img src="https://3.bp.blogspot.com/-5SS7iHxrXqA/VstNSiWY7bI/AAAAAAAAGCg/0l1pPlhsETk/s1600/IMG_0789%2B%2B01.jpg"  width="100" style="border:2px solid #000000;" alt="">
+            <p><strong>Mr Kingshook Garg</strong></p>
+            <p>"A hidden gem for bibliophiles! Discover new reads, friendly staff, and an inviting atmosphere."</p>
+        </div>
+    </div>
+    <div id="form-review" class="border">
+        <h1>Customer Review Form</h1>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your name.." required>
+    
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Your email.." required>
+    
+          <label for="review">Review:</label>
+          <textarea id="review" name="review" placeholder="Write your review.." required></textarea>
+    
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      <footer>
+        <ul class="social-icons">
+          <li><a href="https://example.com/facebook" target="_blank"><img src="https://1.bp.blogspot.com/-E7Q8QGQi8jU/WImcvZPvYQI/AAAAAAAACTw/0Er2C5lpPrkRx_JMFTMU0ifRdjS3e4XJQCLcB/s1600/VEKTOR+ICON7.png" width="40" alt="Facebook"></a></li>
+          <li><a href="https://example.com/twitter" target="_blank"><img src="https://th.bing.com/th/id/R.9a3a06f78cc0a8d79fce59e2de6da146?rik=nLAu3Z%2f0QUb%2fVw&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2fiynque%2fios7-style%2f1024%2fTwitter-icon.png&ehk=eD3Hc5yQAyP3AKPJoYHB8yeWKwKdaVAswR5kxmodex4%3d&risl=&pid=ImgRaw&r=0" width="40" alt="Twitter"></a></li>
+          <li><a href="https://example.com/instagram" target="_blank"><img src="https://th.bing.com/th/id/OIP.JCI8klaaA1w4LCtljpeJoAHaHa?pid=ImgDet&rs=1" width="40" alt="Instagram"></a></li>
+        </ul>
+  
+        <ul class="demo-links">
+          <li><a href="https://example.com/terms" target="_blank">Terms and Conditions</a></li>
+          <li><a href="https://example.com/privacy" target="_blank">Privacy Policy</a></li>
+          <li><a href="https://example.com/copyright" target="_blank">Copyright Information</a></li>
+        </ul>
+  
+        <a href="#top" id="back-to-top">Back to Top</a>
+      </footer>
+</body>
+</html>
